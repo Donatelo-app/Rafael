@@ -1,0 +1,32 @@
+{
+  "name": "donatelo-logger",
+  "version": "1.0.0",
+  "description": "Simple logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donatelo-app/donatelo-logger.git"
+  },
+  "keywords": [
+    "logger",
+    "donatelo",
+    "service",
+    "telegram",
+    "bot",
+    "express"
+  ],
+  "author": "azbang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Donatelo-app/donatelo-logger/issues"
+  },
+  "homepage": "https://github.com/Donatelo-app/donatelo-logger#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
