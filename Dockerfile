@@ -15,5 +15,5 @@ RUN npm i --only=production
 
 EXPOSE 8080
 
-CMD [ "npm", "start" ]
+CMD [ "node", "index.js" ]
 CMD ["gunicorn", "--workers=2", "--bind=0.0.0.0:8080", "app:app"]
