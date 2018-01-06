@@ -8,8 +8,7 @@ WORKDIR "$APP_DIR"
 COPY package*.json ./
 
 ENV TELEGRAM_BOT_TOKEN ""
-ENV APP_DOMEN ""
-ENV SERVER_IP ""
+ENV USERS ""
 
 RUN npm i --only=production
 

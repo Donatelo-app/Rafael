@@ -4,7 +4,7 @@ const api = 'http://localhost:' + setup.port;
 
 const basicNotify = async () => {
   let resp = await axios.post(api + '/issue', {
-    label: 'Test',
+    label: null,
     type: 'error',
     msg: 'This test messsage for check logger work',
     db: false
