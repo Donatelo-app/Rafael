@@ -2,13 +2,13 @@
 
 const dateFormat = require('dateformat');
 const TelegramBot = require('node-telegram-bot-api');
-const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true, filepath: false });
+const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true});
 const setup = require('../setup');
 const db = require('./db');
 
 const users = process.env.USERS.replace(' ', '').split(';');
 const checkAccess = (id) => {
-	let isAccess = users.find((user) => user === id);
+	let isAccess = users.find((user) => user == id);
 	if(!isAccess) bot.sendMessage(id, setup.noAccessMessage, {parse_mode: 'Markdown'});
 	return isAccess;
 }
