@@ -1,7 +1,7 @@
 {
   "name": "donatelo-logger",
   "version": "1.0.0",
-  "description": "Simple logger",
+  "description": "Simple logger for telegram",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -23,9 +23,11 @@
   "homepage": "https://github.com/Donatelo-app/donatelo-logger#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
     "dateformat": "^3.0.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
+    "express-rate-limit": "^2.11.0",
     "nedb-promise": "^2.0.1",
     "node-telegram-bot-api": "^0.30.0"
   },

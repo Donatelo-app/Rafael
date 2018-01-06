@@ -1,25 +1,22 @@
 const axios = require('axios');
 const setup = require('../setup');
+const api = 'http://localhost:' + setup.port;
 
-const basicTest = async () => {
-  let resp = await axios.post('http://localhost:' + setup.port + '/issue', {
+const basicNotify = async () => {
+  let resp = await axios.post(api + '/issue', {
     label: 'Test',
     type: 'error',
     msg: 'This test messsage for check logger work',
     db: false
   });
-  console.log(resp.data);
+  console.log('basicNotify:', resp.data);
 }
-
-const pidorTest = async () => {
-  let resp = await axios.post('http://localhost:' + setup.port + '/issue', {
-    label: 'МАМАЕВ ПИДОР',
-    type: 'warning',
-    msg: 'Осторожно! Ошибка в коде ориентации!',
-    db: false
+const findLogs = async () => {
+  let resp = await axios.post(api + '/find', {
+    query: {type: 'log'}
   });
-  console.log(resp.data);
+  console.log('findLogs:', resp.data);
 }
 
-// basicTest();
-pidorTest();
+basicNotify();
+findLogs();

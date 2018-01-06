@@ -7,6 +7,7 @@
     "warning": "⚠️",
     "default": "❓"
   },
+  "notifyPerMinute": 1,
   "noAccessMessage": "Sorry, this bot have private access. Try read https://github.com/Donatelo-app/donatelo-logger",
   "defaultLabel": "Houston, we have an unknown crap!",
   "pingMessage": "I'm alive, don't worry :)",
