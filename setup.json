@@ -1,0 +1,14 @@
+{
+  "port": 8080,
+  "users": [230760592],
+  "types": {
+    "log": "✉️",
+    "error": "❗️",
+    "warning": "⚠️",
+    "default": "❓"
+  },
+  "noAccessMessage": "Sorry, this bot have private access. Try read https://github.com/Donatelo-app/donatelo-logger",
+  "defaultLabel": "Houston, we have an unknown crap!",
+  "pingMessage": "I'm alive, don't worry :)",
+  "startMessage": "Hello! I'm Donatelo Logger and i can notify you about errors, cool? Cool."
+}

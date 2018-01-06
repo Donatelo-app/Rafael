@@ -28,5 +28,8 @@
     "express": "^4.16.2",
     "nedb-promise": "^2.0.1",
     "node-telegram-bot-api": "^0.30.0"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1"
   }
 }
